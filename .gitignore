@@ -18,3 +18,6 @@
 
 # Ignote .DS_Store BS
 .DS_Store
+
+# ignore paperclip assets
+/public/system/
