@@ -32,6 +32,13 @@ gem 'react-rails', '~> 1.8.2'
 # use HAML for templating
 gem 'haml'
 
+# CMS
+gem 'activeadmin', github: 'activeadmin'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+
+# Devise for user auth
+gem 'devise'
+
 # Use rails-assets to grab client-side libs
 source 'https://rails-assets.org' do
   gem 'rails-assets-skeleton'
