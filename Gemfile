@@ -36,6 +36,9 @@ gem 'haml'
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
+# Use paperclip for asset management
+gem "paperclip", "~> 5.0.0"
+
 # Devise for user auth
 gem 'devise'
 
