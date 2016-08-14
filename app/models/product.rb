@@ -4,4 +4,16 @@ class Product < ApplicationRecord
 
   validates_presence_of :name, :price, :description
   validates :image, attachment_presence: true
+
+  def medium_image_url
+    image.url(:medium)
+  end
+
+  def large_image_url
+    image.url(:large)
+  end
+
+  def thumb_image_url
+    image.url(:thumb)
+  end
 end
