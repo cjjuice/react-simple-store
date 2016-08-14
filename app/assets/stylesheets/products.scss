@@ -1,3 +1,20 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#product-index {
+  .product-block {
+    margin: 20px 0;
+
+    .block-container {
+      .info-overlay {
+        text-align: center;
+        margin-top: 10px;
+        opacity: 0;
+
+        p {
+          margin: 2.5px 0;
+        }
+      }
+    }
+  }
+}

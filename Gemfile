@@ -44,8 +44,9 @@ gem 'devise'
 
 # Use rails-assets to grab client-side libs
 source 'https://rails-assets.org' do
-  gem 'rails-assets-skeleton'
+  gem 'rails-assets-just-grid-it'
   gem 'rails-assets-normalize-css'
+  gem 'rails-assets-velocity'
 end
 
 # Use Capistrano for deployment

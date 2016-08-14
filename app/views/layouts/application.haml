@@ -3,9 +3,11 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title ReactSimpleStore
+    %link{:href => "https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:300", :rel => "stylesheet"}/
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    = yield
-
+    = render partial: "layouts/nav"
+    .container
+      = yield
