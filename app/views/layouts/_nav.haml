@@ -2,3 +2,5 @@
   .col-md-12
     = link_to "/" do
       %h2 Simple Store
+    = link_to cart_path do
+      = react_component('MiniCart', render(template: 'carts/show.json.jbuilder'), {prerender: true})

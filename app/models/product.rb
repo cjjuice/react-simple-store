@@ -1,4 +1,7 @@
 class Product < ApplicationRecord
+  has_many :cart_items
+  has_many :carts, through: :cart_items
+
   has_attached_file :image, styles: { large: '1400x', medium: "800x", thumb: "100x" }
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 

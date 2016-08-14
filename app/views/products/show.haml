@@ -1,2 +1,5 @@
 #product-show
+  .row
+    .col-md-12
+      = link_to "< Back to Products", products_path
   = react_component('ProductDetail', render(template: 'products/show.json.jbuilder'), {prerender: true})
