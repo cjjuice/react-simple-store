@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: react-simple-store_production
-  username: react-simple-store
-  password: <%= ENV['REACT-SIMPLE-STORE_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['MYSQL_DATABASE_PASSWORD'] %>
