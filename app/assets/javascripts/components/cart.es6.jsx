@@ -30,7 +30,10 @@ class Cart extends React.Component {
             {this.props.cartItems.map(createItem)}
           </div>
           <div className="row">
-            <div className="col-md-3 col-md-offset-9">
+            <div className="col-md-2 col-md-offset-1">
+              <a href="/"><p>Continue Shopping</p></a>
+            </div>
+            <div className="col-md-3 col-md-offset-6">
               <p>Subtotal: ${this.state.subtotal.toFixed(2)}</p>
               <p>Tax: ${(.0865 * this.state.subtotal).toFixed(2)}</p>
               <p>Total: ${((.0865 * this.state.subtotal) + this.state.subtotal).toFixed(2)}</p>
