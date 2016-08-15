@@ -21,3 +21,5 @@
 
 # ignore paperclip assets
 /public/system/
+# ignore deploy config
+/config/deploy/
