@@ -52,3 +52,4 @@ production:
   database: react-simple-store_production
   username: root
   password: <%= ENV['MYSQL_DATABASE_PASSWORD'] %>
+  socket: /var/run/mysqld/mysqld.sock
