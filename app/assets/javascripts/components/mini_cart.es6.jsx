@@ -6,6 +6,14 @@ class MiniCart extends React.Component {
     };
   }
 
+  componentDidMount () {
+    $(document).on("itemAddedToCart", this.incrementItemNum.bind(this));
+  }
+
+  incrementItemNum () {
+    this.setState({numItems: this.state.numItems + 1});
+  }
+
   render () {
     return (
       <div className="mini-cart">
