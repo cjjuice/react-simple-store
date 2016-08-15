@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :products
 
   # cart routes
-  get '/cart', to: 'carts#show', as: 'cart'
+  get '/cart', to: 'carts#index', as: 'cart'
   post '/cart', to: 'carts#add_item', as: 'add_cart_item'
+  delete '/cart', to: 'carts#destroy_item', as: 'destroy_cart_item'
 end

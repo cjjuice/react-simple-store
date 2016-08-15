@@ -19,7 +19,7 @@ class ProductDetail extends React.Component {
         this.setState({title: "Added To Cart"})
       }.bind(this),
       error: function(xhr, status, err) {
-        // emit error event (cart added)
+        console.log(xhr, err, status);
       }.bind(this)
     });
   }
