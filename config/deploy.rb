@@ -1,8 +1,8 @@
 # config valid only for current version of Capistrano
 lock '3.6.0'
 
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'react-simple-store'
+set :repo_url, 'git@github.com:cjjuice/react-simple-store.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
